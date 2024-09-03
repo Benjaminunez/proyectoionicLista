@@ -6,6 +6,7 @@
 
 /*Header de Home*/
 
+
 ion-header{               /*css dedicado esqueleto de header*/
   display: flex;
   justify-content: center;
@@ -58,7 +59,6 @@ ion-header{               /*css dedicado esqueleto de header*/
 .titulo_curso{
   display: flex;
   justify-content: center;    /*css div de titulo de contenedores "cursos"*/
-  border: solid black 1px;
   align-items: center;
   height: 23%;
   border-radius: 2px;
@@ -75,8 +75,9 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 .topic_casillas{
   display: flex;
-  column-gap: 13rem;
+  column-gap: 30%;
   align-items: center;
+  justify-content: center;
   background-color: var(--plomoDuoc);
   h1{
     color: var(--yellowDuoc);
@@ -90,8 +91,8 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 .content_casillas{
   display: flex;
-  border: 1px solid black;
   column-gap: 30%;
   align-items: center;
+  justify-content: center;
+  height: auto;
 }
-
