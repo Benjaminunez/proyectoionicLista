@@ -75,7 +75,7 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 .topic_casillas{
   display: flex;
-  column-gap: 30%;
+  column-gap: 25%;
   align-items: center;
   justify-content: center;
   background-color: var(--plomoDuoc);
@@ -91,7 +91,7 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 .content_casillas{
   display: flex;
-  column-gap: 30%;
+  column-gap: 25%;
   align-items: center;
   justify-content: center;
   height: auto;
