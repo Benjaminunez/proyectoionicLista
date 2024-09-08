@@ -4,8 +4,12 @@
 
 /* -------------------------------------- */
 
-/*Header de Home*/
 
+
+
+
+
+/*Header de Home*/
 
 ion-header{               /*css dedicado esqueleto de header*/
   display: flex;
@@ -75,7 +79,7 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 .topic_casillas{
   display: flex;
-  column-gap: 25%;
+  column-gap: 22%;
   align-items: center;
   justify-content: center;
   background-color: var(--plomoDuoc);
@@ -84,6 +88,7 @@ ion-header{               /*css dedicado esqueleto de header*/
     font-family: "SUSE", sans-serif;    /*css titulo de contenedores "cursos"*/
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 13px;
   }
 }
 
@@ -91,8 +96,28 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 .content_casillas{
   display: flex;
-  column-gap: 25%;
+  column-gap: 19%;
   align-items: center;
   justify-content: center;
   height: auto;
+    h1{
+      font-family: "SUSE", sans-serif;    /*css titulo de contenedores "cursos"*/
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 13px;
+    }
+}
+
+/* -------------------------------------- */
+.imagen_curso > img{
+  height: 9rem;
+  width: 100%;
+}
+
+.boton_info{
+  --background: var(--yellowDuoc) ;    /*css de contendo principal de la pagina*/
+  --border-color: var(--negroDuoc);
+  --font-family: "SUSE", sans-serif;    /*css titulo de contenedores "cursos"*/
+  --font-optical-sizing: auto;
+  --font-style: normal;
 }

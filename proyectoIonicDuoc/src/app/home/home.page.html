@@ -1,125 +1,173 @@
 <ion-header>
   <div class="barra_superior">
     <ion-title> DuocCursos </ion-title>
-    <ion-button shape="round" id="boton_logout">
+    <ion-button shape="round" id="boton_logout" routerLink="/login">
       <ion-icon name="log-out-outline"></ion-icon>
     </ion-button>
   </div>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <!--//////////////////////////////-->  
+    <!--////////////////////////////// programacion movil-->  
     <div class="cursos">
       <div class="titulo_curso">
         <h1>Curso Prog/Movil 0023D</h1>
       </div>
-      <div class="topic_casillas">
-          <h1>hola</h1>
-          <h1>hola</h1>
-          <h1>hola</h1>
+      <div class="imagen_curso">
+        <img [src] = "'https://wallpapercave.com/wp/wp2456257.jpg'" alt="">
       </div>
+      <div class="topic_casillas">
+        <h1>docente</h1>
+        <h1>cant.alumnos</h1>
+        <h1>activo</h1>
+    </div>
       <div class="content_casillas">
-          <h1>hola</h1>
-          <h1>hola</h1>
-          <h1>hola</h1>
+          <h1>Eduardo Fuentes</h1>
+          <h1>20</h1>
+          <h1>SI</h1>
       </div>
       <div class="boton_detalle">
-        <ion-button expand="block">Block</ion-button>
+        <ion-button expand="block" 
+          routerLink="/cursos"
+          class="boton_info">
+          <ion-icon name="information-circle-outline"></ion-icon>
+          Mas Info
+        </ion-button>      
       </div>
     </div>    
-    <!--//////////////////////////////-->
+    <!--////////////////////////////// etica -->  
     <div class="cursos">
       <div class="titulo_curso">
-        <h1>Curso Prog/Movil 0023D</h1>
+        <h1>Curso Etica Actual 0004B</h1>
+      </div>
+      <div class="imagen_curso">
+        <img [src] = "'https://wallpapercave.com/wp/wp4358294.jpg'" alt="">
       </div>
       <div class="topic_casillas">
-          <h1>hola</h1>
-          <h1>hola</h1>
-          <h1>hola</h1>
+          <h1>docente</h1>
+          <h1>cant.alumnos</h1>
+          <h1>activo</h1>
       </div>
       <div class="content_casillas">
-        <h1>hola</h1>
-        <h1>hola</h1>
-        <h1>hola</h1>
+          <h1>Maria Jose</h1>
+          <h1>33</h1>
+          <h1>NO</h1>
       </div>
       <div class="boton_detalle">
-        <ion-button expand="block">Block</ion-button>
+        <ion-button expand="block" 
+          routerLink="/cursos"
+          class="boton_info">
+          <ion-icon name="information-circle-outline"></ion-icon>
+          Mas Info
+        </ion-button>      
       </div>
-    </div>
-    <!--//////////////////////////////-->
+    </div>    
+    <!--////////////////////////////// matematicas-->  
     <div class="cursos">
       <div class="titulo_curso">
-        <h1>Curso Prog/Movil 0023D</h1>
+        <h1>Curso Algebra 1 0033Z</h1>
+      </div>
+      <div class="imagen_curso">
+        <img [src] = "'https://th.bing.com/th/id/OIP.ad8Vjwe8bpstDhVOrkZVsAHaFS?rs=1&pid=ImgDetMain'" alt="">
       </div>
       <div class="topic_casillas">
-          <h1>hola</h1>
-          <h1>hola</h1>
-          <h1>hola</h1>
-      </div>
+        <h1>docente</h1>
+        <h1>cant.alumnos</h1>
+        <h1>activo</h1>
+    </div>
       <div class="content_casillas">
-        <h1>hola</h1>
-        <h1>hola</h1>
-        <h1>hola</h1>
+          <h1>Juan Perez</h1>
+          <h1>11</h1>
+          <h1>NO</h1>
       </div>
       <div class="boton_detalle">
-        <ion-button expand="block">Block</ion-button>
+        <ion-button expand="block" 
+          routerLink="/cursos"
+          class="boton_info">
+          <ion-icon name="information-circle-outline"></ion-icon>
+          Mas Info
+        </ion-button>      
       </div>
-    </div>
-    <!--//////////////////////////////-->
+    </div>    
+    <!--////////////////////////////// arquitectura-->  
     <div class="cursos">
       <div class="titulo_curso">
-        <h1>Curso Prog/Movil 0023D</h1>
+        <h1>Curso Arqui.Software 0023D</h1>
+      </div>
+      <div class="imagen_curso">
+        <img [src] = "'https://www.pixelstalk.net/wp-content/uploads/2016/10/Wonderful-Architecture-Background.jpg'" alt="">
       </div>
       <div class="topic_casillas">
-          <h1>hola</h1>
-          <h1>hola</h1>
-          <h1>hola</h1>
-      </div>
+        <h1>docente</h1>
+        <h1>cant.alumnos</h1>
+        <h1>activo</h1>
+    </div>
       <div class="content_casillas">
-        <h1>hola</h1>
-        <h1>hola</h1>
-        <h1>hola</h1>
+          <h1>Sofia Reyes</h1>
+          <h1>26</h1>
+          <h1>SI</h1>
       </div>
       <div class="boton_detalle">
-        <ion-button expand="block">Block</ion-button>
+        <ion-button expand="block" 
+          routerLink="/cursos"
+          class="boton_info">
+          <ion-icon name="information-circle-outline"></ion-icon>
+          Mas Info
+        </ion-button>      
       </div>
-    </div>
-    <!--//////////////////////////////-->
+    </div>    
+    <!--////////////////////////////// db-->  
     <div class="cursos">
       <div class="titulo_curso">
-        <h1>Curso Prog/Movil 0023D</h1>
+        <h1>Curso PLS SQL 0023D</h1>
+      </div>
+      <div class="imagen_curso">
+        <img [src] = "'https://th.bing.com/th/id/OIP.daq4LtCHONDpLLiccyJ-1gHaE8?rs=1&pid=ImgDetMain'" alt="">
       </div>
       <div class="topic_casillas">
-          <h1>hola</h1>
-          <h1>hola</h1>
-          <h1>hola</h1>
-      </div>
+        <h1>docente</h1>
+        <h1>cant.alumnos</h1>
+        <h1>activo</h1>
+    </div>
       <div class="content_casillas">
-        <h1>hola</h1>
-        <h1>hola</h1>
-        <h1>hola</h1>
+          <h1>Benjamin Soto</h1>
+          <h1>80</h1>
+          <h1>NO</h1>
       </div>
       <div class="boton_detalle">
-        <ion-button expand="block">Block</ion-button>
+        <ion-button expand="block" 
+          routerLink="/cursos"
+          class="boton_info">
+          <ion-icon name="information-circle-outline"></ion-icon>
+          Mas Info
+        </ion-button>      
       </div>
-    </div>
-    <!--//////////////////////////////-->
+    </div>    
+    <!--////////////////////////////// lenguaje-->  
     <div class="cursos">
       <div class="titulo_curso">
-        <h1>Curso Prog/Movil 0023D</h1>
+        <h1>Curso Lenguaje 0066C</h1>
+      </div>
+      <div class="imagen_curso">
+        <img [src] = "'https://www.ackizyurdu.com/cms-uploads/ac-kiz-yurdu-anlamak-yada-anlamamak-blog-yazisi-img1.jpg'" alt="">
       </div>
       <div class="topic_casillas">
-          <h1>hola</h1>
-          <h1>hola</h1>
-          <h1>hola</h1>
-      </div>
-      <div class="content_casillas">
-        <h1>hola</h1>
-        <h1>hola</h1>
-        <h1>hola</h1>
-      </div>
-      <div class="boton_detalle">
-        <ion-button expand="block">Block</ion-button>
-      </div>
+        <h1>docente</h1>
+        <h1>cant.alumnos</h1>
+        <h1>activo</h1>
     </div>
+      <div class="content_casillas">
+          <h1>Nicolas Santis</h1>
+          <h1>11</h1>
+          <h1>SI</h1>
+      </div>
+        <div class="boton_detalle">
+          <ion-button expand="block" 
+            routerLink="/cursos"
+            class="boton_info">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            Mas Info
+          </ion-button>      
+        </div>
+    </div>    
     <!--//////////////////////////////-->

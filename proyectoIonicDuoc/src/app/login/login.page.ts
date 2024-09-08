@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
+  menuHome: boolean=true;
+  
   constructor() { }
 
   ngOnInit() {
