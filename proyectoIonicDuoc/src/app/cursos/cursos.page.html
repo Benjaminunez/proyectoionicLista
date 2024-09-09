@@ -1,8 +1,73 @@
 <ion-header>
   <div class="barra_superior">
+    <ion-button shape="round" id="boton_logout" routerLink="/home">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>    
     <ion-title> DuocCursos </ion-title>
     <ion-button shape="round" id="boton_logout" routerLink="/login">
       <ion-icon name="log-out-outline"></ion-icon>
     </ion-button>
   </div>
 </ion-header>
+
+<ion-content [fullscreen]="true">
+<div class="imagen">  
+  <div class="titulo-imagen">
+    <h1>Curso Prog/Movil</h1>
+  </div>
+</div>
+<div class="informacion">
+  <p>Generacion Asistencia QR</p>
+  <!--////////////////////////////// inicio alerta qr-->
+  <ion-button id="open-modal" expand="block">
+    <ion-icon name="qr-code-outline"></ion-icon>
+  </ion-button>
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+    <ng-template>
+      <div class="block">
+        <h3>Generacion QR Asistencia</h3>
+        <div class="QR">
+          <img src="https://png.pngtree.com/png-vector/20231220/ourlarge/pngtree-blue-qr-code-png-image_11284921.png" alt="">
+        </div>
+      </div>
+    </ng-template>
+  </ion-modal>
+
+</div>
+<!--////////////////////////////// alerta con qr termino-->
+  <div class="titulo-alum-pre">
+    <h2>Alumnos Presentes</h2>  
+  </div>
+  <div id="alumnoPr">
+    <ion-list>
+      <ion-item *ngFor="let item of items; let index">
+        <ion-avatar slot="start">
+          <img [src]="'https://picsum.photos/80/80?random=' + index" alt="avatar" />
+        </ion-avatar>
+        <ion-label>{{item}}</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="ionInfiniteScroll($event)">
+      <ion-infinite-scroll-content>
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </div>
+  <div class="titulo-alum-pre">
+    <h2>Alumnos Ausentes</h2>  
+  </div>
+  <div id="alumnoPr">
+    <ion-list>
+      <ion-item *ngFor="let item of items; let index">
+        <ion-avatar slot="start">
+          <img [src]="'https://picsum.photos/80/80?random=' + index" alt="avatar" />
+        </ion-avatar>
+        <ion-label>{{item}}</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="ionInfiniteScroll($event)">
+      <ion-infinite-scroll-content>
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </div>
+</ion-content>
