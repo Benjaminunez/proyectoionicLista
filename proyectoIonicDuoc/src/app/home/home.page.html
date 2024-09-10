@@ -1,5 +1,8 @@
 <ion-header>
   <div class="barra_superior">
+    <ion-button shape="round" (click)="cambiarTema()" id="boton_logout">
+      <ion-icon name="color-palette-outline"></ion-icon>
+    </ion-button>
     <ion-title> DuocCursos </ion-title>
     <ion-button shape="round" id="boton_logout" routerLink="/login">
       <ion-icon name="log-out-outline"></ion-icon>
@@ -9,6 +12,7 @@
 
 <ion-content [fullscreen]="true">
     <!--////////////////////////////// programacion movil-->  
+  <div id="todo">
     <div class="cursos">
       <div class="titulo_curso">
         <h1>Curso Prog/Movil 0023D</h1>
@@ -17,9 +21,9 @@
         <img [src] = "'https://wallpapercave.com/wp/wp2456257.jpg'" alt="">
       </div>
       <div class="topic_casillas">
-        <h1>docente</h1>
-        <h1>cant.alumnos</h1>
-        <h1>activo</h1>
+        <h1>Docente</h1>
+        <h1>Cant.Alumnos</h1>
+        <h1>Activo</h1>
     </div>
       <div class="content_casillas">
           <h1>Eduardo Fuentes</h1>
@@ -44,9 +48,9 @@
         <img [src] = "'https://wallpapercave.com/wp/wp4358294.jpg'" alt="">
       </div>
       <div class="topic_casillas">
-          <h1>docente</h1>
-          <h1>cant.alumnos</h1>
-          <h1>activo</h1>
+        <h1>Docente</h1>
+        <h1>Cant.Alumnos</h1>
+        <h1>Activo</h1>
       </div>
       <div class="content_casillas">
           <h1>Maria Jose</h1>
@@ -71,9 +75,9 @@
         <img [src] = "'https://th.bing.com/th/id/OIP.ad8Vjwe8bpstDhVOrkZVsAHaFS?rs=1&pid=ImgDetMain'" alt="">
       </div>
       <div class="topic_casillas">
-        <h1>docente</h1>
-        <h1>cant.alumnos</h1>
-        <h1>activo</h1>
+        <h1>Docente</h1>
+        <h1>Cant.Alumnos</h1>
+        <h1>Activo</h1>
     </div>
       <div class="content_casillas">
           <h1>Juan Perez</h1>
@@ -98,9 +102,9 @@
         <img [src] = "'https://www.pixelstalk.net/wp-content/uploads/2016/10/Wonderful-Architecture-Background.jpg'" alt="">
       </div>
       <div class="topic_casillas">
-        <h1>docente</h1>
-        <h1>cant.alumnos</h1>
-        <h1>activo</h1>
+        <h1>Docente</h1>
+        <h1>Cant.Alumnos</h1>
+        <h1>Activo</h1>
     </div>
       <div class="content_casillas">
           <h1>Sofia Reyes</h1>
@@ -125,9 +129,9 @@
         <img [src] = "'https://th.bing.com/th/id/OIP.daq4LtCHONDpLLiccyJ-1gHaE8?rs=1&pid=ImgDetMain'" alt="">
       </div>
       <div class="topic_casillas">
-        <h1>docente</h1>
-        <h1>cant.alumnos</h1>
-        <h1>activo</h1>
+        <h1>Docente</h1>
+        <h1>Cant.Alumnos</h1>
+        <h1>Activo</h1>
     </div>
       <div class="content_casillas">
           <h1>Benjamin Soto</h1>
@@ -152,9 +156,9 @@
         <img [src] = "'https://www.ackizyurdu.com/cms-uploads/ac-kiz-yurdu-anlamak-yada-anlamamak-blog-yazisi-img1.jpg'" alt="">
       </div>
       <div class="topic_casillas">
-        <h1>docente</h1>
-        <h1>cant.alumnos</h1>
-        <h1>activo</h1>
+        <h1>Docente</h1>
+        <h1>Cant.Alumnos</h1>
+        <h1>Activo</h1>
     </div>
       <div class="content_casillas">
           <h1>Nicolas Santis</h1>
@@ -171,3 +175,4 @@
         </div>
     </div>    
     <!--//////////////////////////////-->
+  </div>

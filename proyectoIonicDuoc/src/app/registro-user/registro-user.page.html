@@ -1,13 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>registro_user</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">registro_user</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-icon name="color-palette-outline" id="tema" (click)="cambiarTema()"></ion-icon>
+  <div class="contenedor">
+    <img [src]="'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'" alt="">
+    <h1>Registro Usuario</h1>
+    <input type="email" placeholder="Correo Electronico" (blur)="animarError(0)">
+    <input type="password" placeholder="Nueva Contraseña" (blur)="animarError(1)">
+    <input type="password" placeholder="Validar Contraseña"(blur)="animarError(2)">
+    <a href="/login">
+      <div id="boton-ingreso">
+        <h2>Aceptar Cambios</h2>
+      </div>
+    </a>
+    <a href="/login"><p id="olvide">volver</p></a>
+  </div>
 </ion-content>

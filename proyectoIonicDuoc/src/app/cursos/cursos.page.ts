@@ -11,7 +11,7 @@ export class CursosPage  
 
   items:   
  any[] = [];
-  totalItems: number = 10; // Adjust this to your desired limit
+  totalItems: number = 10; // ajusta el limite de usuarios a aparecer
   hasMoreData: boolean = true;
 
   constructor() {}
@@ -29,9 +29,9 @@ export class CursosPage  
       newItems.push(`Item ${i + 1}`); // Adjust the item content as needed
     }
 
-    this.items.push(...newItems); // Add new items to the existing list
+    this.items.push(...newItems); // agrega nuevo producto dentro de listado
 
-    // Check if all items have been loaded
+    // chequera que los productos fueron leidos
     this.hasMoreData = this.items.length < this.totalItems;
   }
 

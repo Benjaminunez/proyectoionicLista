@@ -7,7 +7,7 @@
     row-gap: 15px;
     min-height: 100vh;
         ion-icon{
-            color: var(--negroDuoc);
+            color: #ffffff;
             font-size: 6rem;
         }
     input{
@@ -64,5 +64,32 @@ a :hover{
 }
 
 img {
-    max-width: 73%;
+    max-width: 10rem;
 }
+
+/*------------------------------ boton de ingreso de css*/
+#boton-ingreso{
+    display: flex;
+    justify-content: center;
+    background-color: var(--yellowDuoc);
+    width: 16rem;
+    height: 2.9rem;
+    border: 1px solid var(--plomoDuoc);
+    border-radius: 23px;
+    align-items: center;
+    h2{
+        font-family: "SUSE", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 22px;        
+        color: var(--negroDuoc);
+    }
+}
+
+#boton-ingreso:hover{
+    background-color: var(--negroDuoc);
+        h2{       
+            color: var(--yellowDuoc);
+        }
+}
+/*------------------------------ ----------------------*/

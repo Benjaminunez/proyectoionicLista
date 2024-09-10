@@ -10,7 +10,7 @@ ion-header{               /*css dedicado esqueleto de header*/
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--plomoDuoc);
+  background-color: var(--headerDark);
 }
 
 /* -------------------------------------- */
@@ -20,18 +20,21 @@ ion-header{               /*css dedicado esqueleto de header*/
   align-items: center;
   background-color: var(--plomoDuoc);
   border-radius: 6rem ;
-  column-gap: 5rem;
+  column-gap: 18px;
   height: 4rem;
+  background-color: var(--headerDark);
+
 
     ion-title{              /*css titulo duoc*/
-      color: #ffffff;
+      color: var(--tituloDark);
       font-family: "SUSE", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
     }
     #boton_logout{
-      --background: var(--yellowDuoc) ;    /*css de contendo principal de la pagina*/
+      --background: var(--botonDark) ;    /*css de contendo principal de la pagina*/
       --border-color: var(--negroDuoc);
+
     }
 }
 /* -------------------------------------- */
@@ -42,11 +45,17 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 /* -------------------------------------- */
 
+#todo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--fondo);
+}
+
 .cursos{
-  width: 100%;
+  max-width: auto;
   height: auto;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-  /*css div de cada uno de los cursos en home*/
   display: flex;
   flex-direction: column;
   margin-top: 15px;
@@ -59,6 +68,7 @@ ion-header{               /*css dedicado esqueleto de header*/
   display: flex;
   justify-content: center;    /*css div de titulo de contenedores "cursos"*/
   align-items: center;
+  width: 20rem;
   height: 23%;
   border-radius: 2px;
   background-color: var(--negroDuoc);
@@ -91,15 +101,17 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 .content_casillas{
   display: flex;
-  column-gap: 19%;
+  column-gap: 25%;
   align-items: center;
   justify-content: center;
   height: auto;
+  background-color: var(--fondoTarje);
     h1{
       font-family: "SUSE", sans-serif;    /*css titulo de contenedores "cursos"*/
       font-optical-sizing: auto;
       font-style: normal;
       font-size: 13px;
+      color: var( --letraOscuro);
     }
 }
 
