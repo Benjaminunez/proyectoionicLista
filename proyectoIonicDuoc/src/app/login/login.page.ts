@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AnimationController } from '@ionic/angular';
+import { Component, ElementRef, OnInit,} from '@angular/core';
+import {  AnimationController } from '@ionic/angular';
+
 
 
 @Component({
@@ -8,15 +9,15 @@ import { AnimationController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  icono ="oscuro"
-  animarLogo: any;
   
-  constructor(private anim:AnimationController) { }
+  icono ="oscuro"
+
+  constructor(
+    private animationCtrl:AnimationController, private elementRef: ElementRef) {}
 
   ngOnInit() {
-    this.animarLogo()
+    this.animarLogo();
   }
-
 
   cambiarTema(){
     if(this.icono =="oscuro"){
@@ -39,7 +40,7 @@ export class LoginPage implements OnInit {
   }
 
   animarError(index:number){
-    this.anim.create()
+    this.animationCtrl.create()
     .addElement(document.querySelectorAll("input")[index])
     .duration(200)
     .iterations(3)
@@ -52,4 +53,16 @@ export class LoginPage implements OnInit {
     ]).play()
 
   }
+
+  async animarLogo() {
+    const animation = this.animationCtrl
+      .create()
+      .addElement(this.elementRef.nativeElement)
+      .duration(1200)
+      .easing('ease-in-out')
+      .fromTo('transform', 'scale(0.5)', 'scale(1)');
+
+    await animation.play();
+  }
+
 }
