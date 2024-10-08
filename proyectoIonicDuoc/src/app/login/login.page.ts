@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit,} from '@angular/core';
-import {  AnimationController } from '@ionic/angular';
+import { AnimationController } from '@ionic/angular';
 
 
 
@@ -10,13 +10,16 @@ import {  AnimationController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
   
+  isModalOpen = false;
   icono ="oscuro"
 
   constructor(
-    private animationCtrl:AnimationController, private elementRef: ElementRef) {}
+    private animationCtrl:AnimationController, 
+    private elementRef: ElementRef) {}
 
   ngOnInit() {
     this.animarLogo();
+    this.animarFoto();
   }
 
   cambiarTema(){
@@ -65,4 +68,19 @@ export class LoginPage implements OnInit {
     await animation.play();
   }
 
+  animarFoto(){
+    this.animationCtrl.create()
+    .addElement(document.querySelector('#logo')!)
+    .duration(1000)
+    .iterations(Infinity)
+    .direction("alternate")
+    .fromTo("transfore","scale(.1)","scale(1.3)")
+    
+    
+    .play();
+  }
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
 }
