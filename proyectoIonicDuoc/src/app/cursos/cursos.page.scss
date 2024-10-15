@@ -4,6 +4,7 @@
 
 /* -------------------------------------- */
 
+
 /*Header de Home*/
 
 ion-header{               /*css dedicado esqueleto de header*/
@@ -67,6 +68,19 @@ ion-header{               /*css dedicado esqueleto de header*/
 
 p{
     color: var(--letraOscuro);
+}
+
+@media (max-width: 369px){ 
+    .titulo-imagen{
+        height: 10%;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        h1{
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    
 }
 
 /* -------------------------------------- opciones de generacion qr */

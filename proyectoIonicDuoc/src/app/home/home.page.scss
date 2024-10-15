@@ -72,6 +72,8 @@ ion-header{               /*css dedicado esqueleto de header*/
   height: 23%;
   border-radius: 2px;
   background-color: var(--negroDuoc);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
     h1{
       color:#ffffff;
       font-family: "SUSE", sans-serif;    /*css titulo de contenedores "cursos"*/
